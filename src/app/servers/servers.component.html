@@ -1,4 +1,9 @@
-<label for="sever">Server Name</label>
+<label for="sever">Server Name EVENT</label>
 <input type="text" class="form-control" id="sever" (input)="onUpdateServerName($event)"/>
+<label for="sever">Server Name Two Binding</label>
+<input type="text" class="form-control"  [(ngModel)]="serverName"/>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()" >Add server</button>
+<h5 >Outup</h5>
 <p>{{serverName}}</p>
+<p>{{serverCreationStatus}}</p>
+<p [textContent]="serverCreationStatus"></p>
