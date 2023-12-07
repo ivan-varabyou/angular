@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServerComponent implements OnInit {
 
+  serverId = 10;
+  serverStatus = false
   constructor() { }
 
-  ngOnInit(): void {
+  allowNewSe
+
+  ngOnInit() {
+  }
+
+  getServerStatus() {
+    return this.serverStatus
   }
 
 }
