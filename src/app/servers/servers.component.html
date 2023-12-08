@@ -13,7 +13,7 @@
 <ng-template #noServer >
 </ng-template>
   <ul [ngStyle]="{backgroundColor: getBackground(), 'font-size': '18px'}" [ngClass]="{more: workerId > 10}">
-    <li *ngFor="let item of workerData; trackBy:trackById; let i = index" >{{i}}. {{item.name}}</li>
+    <li appHighlight *ngFor="let item of workerData; trackBy:trackById; let i = index" >{{i}}. {{item.name}}</li>
   </ul>
 
 
