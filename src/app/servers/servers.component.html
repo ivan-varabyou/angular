@@ -17,9 +17,9 @@
 <ng-template #noServer >
 
 </ng-template>
-  <ul [ngStyle]="{backgroundColor: getBackground(), 'font-size': '18px'}" [ngClass]="{more: workerId > 10}">
-    <li  [appHighlight]="color" *ngFor="let item of workerData; trackBy:trackById; let i = index" ><ng-container  *ngIf="i % 2; else elseTempale">{{i}}. {{item.name}}</ng-container></li>
-  </ul>
+<ul [ngStyle]="{backgroundColor: getBackground(), 'font-size': '18px'}" [ngClass]="{more: workerId > 10}">
+  <li  [appHighlight]="color" *ngFor="let item of workerData; trackBy:trackById; let i = index" ><ng-container  *ngIf="i % 2; else elseTempale">{{i}}. {{item.name}}</ng-container></li>
+</ul>
 
 
 <ng-template ngNonBindable #elseTempale >{{i}}. {{item.name}}</ng-template>
