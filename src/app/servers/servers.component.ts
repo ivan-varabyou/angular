@@ -9,6 +9,7 @@ console.log("0")
   selector: '#app-servers',
   templateUrl: './servers.component.html',
   styleUrls: ['./servers.component.css'],
+
 })
 export class ServersComponent implements OnInit , OnDestroy{
   serverName  =""
@@ -17,6 +18,7 @@ export class ServersComponent implements OnInit , OnDestroy{
   worker:Worker
   workerData: WorkerData[] = []
   workerId: number = 1
+  color = 'white'
 
 
   constructor() {
