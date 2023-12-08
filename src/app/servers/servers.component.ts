@@ -21,6 +21,7 @@ export class ServersComponent implements OnInit , OnDestroy{
   color = 'white'
 
 
+
   constructor() {
     console.log("2")
     if (typeof Worker !== 'undefined') {
@@ -38,6 +39,10 @@ export class ServersComponent implements OnInit , OnDestroy{
       // You should add a fallback so that your program still executes correctly.
     }
 
+  }
+
+  get condition() {
+    return this.workerId > 10
   }
 
   trackById(index, item) {

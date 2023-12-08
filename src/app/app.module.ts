@@ -8,6 +8,7 @@ import { ServersComponent } from './servers/servers.component';
 import {WarningAlertComponent} from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    HighlightDirective
+    HighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

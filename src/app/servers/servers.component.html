@@ -6,7 +6,7 @@
 <h5 >Outup</h5>
 <p *ngIf="allowNewServer; else noServer">Server was created, server name is {{serverName}}</p>
 
-<div>
+<div *appUnless="condition">
   <input type="radio" name="color" (click)="color='purple'">purple
   <input type="radio" name="color" (click)="color='gray'">gray
   <input type="radio" name="color" (click)="color='pink'">pink
