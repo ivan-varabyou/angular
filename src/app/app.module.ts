@@ -9,6 +9,7 @@ import {WarningAlertComponent} from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { UnlessDirective } from './directives/unless.directive';
+import { LifecycleHooksComponent } from './components/lifecyle-hooks/lifecycle-hooks.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UnlessDirective } from './directives/unless.directive';
     WarningAlertComponent,
     SuccessAlertComponent,
     HighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    LifecycleHooksComponent
   ],
   imports: [
     BrowserModule,
